@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading{
+        @apply text-4xl font-semibold  text-[#d5f365]
+    }
+    .subHeading{
+        @apply text-xl font-semibold
+    }
+    .button{
+        @apply  py-1 px-4 rounded-[9px] bg-[#d5f365] text-black font-semibold border-none text-center cursor-pointer transition duration-[400ms] 
+    }
+    .button_hover {
+        box-shadow: 7px 5px 56px -7px #C3D900;
+        transform: scale(0.97);
+    }
+    .button_active {
+        box-shadow: 7px 5px 56px -10px #C3D900;
+       
+    }
+}
