@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    .box-shadow{
+        box-shadow: 7px 5px 30px -7px #C3D900;
+        transform: scale(0.97);
+    }
     .heading{
         @apply text-4xl font-semibold  text-[#d5f365]
     }
@@ -19,5 +23,8 @@
     .button_active {
         box-shadow: 7px 5px 56px -10px #C3D900;
        
+    }
+    .svg-icon {
+        fill: #d5f365; /* Change this to your desired color */
     }
 }

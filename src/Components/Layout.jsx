@@ -5,7 +5,7 @@ import OurServices from './OurServices'
 
 const Layout = () => {
   return (
-    <div className='text-white'>
+    <div className='text-textColor'>
         <Navbar/>
         <HeroSection/>
         <OurServices/>
