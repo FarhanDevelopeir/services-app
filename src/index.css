@@ -32,7 +32,7 @@
         fill: #d5f365; /* Change this to your desired color */
     }
     .lifeCycleIcon{
-        @apply  absolute bg-black rounded-full -top-9 left-[35%]  p-2 border border-[#d5f365]
+        @apply  absolute bg-black rounded-full -top-7 md:-top-9 left-[35%]  p-2 border border-[#d5f365]
     }
     .box_bg_gradient{
         @apply bg-gradient-to-br from-black to-[#252b10]

@@ -15,16 +15,15 @@ const LifeCycleMethod = () => {
           <h1 className=" text-center heading">Our LifeCycle Method</h1>
         </div>
         <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-20 my-40">
-          <div className=" box_bg_gradient relative border p-4 rounded-md">
-          <img src={img2} width={130}  className=" absolute -top-[5rem] -right-[48%]" />
+          <div className=" box_bg_gradient relative border border-border_color  p-4 rounded-md">
+          <img src={img2} width={130}  className=" hidden md:block absolute -top-[5rem] md:-right-[48%] xl:-right-[58%] 2xl:-right-[48%]" />
             <div className=" lifeCycleIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-red"
+                className="text-red h-9 sm:h-12"
                 enable-background="new 0 0 512 512"
                 viewBox="0 0 512 512"
-                width="50"
-                height="50"
+               
                 fill="#d5f365"
                 id="artificial-intelligence"
               >
@@ -36,15 +35,14 @@ const LifeCycleMethod = () => {
           
           </div>
          
-          <div className="relative box_bg_gradient border p-4 rounded-md">
+          <div className="relative box_bg_gradient border border-border_color p-4 rounded-md">
             <div className=" lifeCycleIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-red"
+                className="text-red h-9 sm:h-12"
                 enable-background="new 0 0 512 512"
                 viewBox="0 0 512 512"
-                width="50"
-                height="50"
+                
                 fill="#d5f365"
                 id="artificial-intelligence"
               >
@@ -53,20 +51,19 @@ const LifeCycleMethod = () => {
             </div>
 
             <div className="my-2 text-xl font-semibold text-center pt-6 pb-4  ">Design</div>
-            <img src={img} width={130}  className=" absolute -bottom-[5rem] -right-[48%]" />
+            <img src={img} width={130}  className="hidden md:block  absolute -bottom-[5rem] -right-[48%]" />
           </div>
           
 
-          <div className="relative box_bg_gradient border p-4 rounded-md">
-          <img src={img2} width={130}  className=" absolute md:hidden lg:block -top-[5rem] -right-[48%]"/>
+          <div className="relative box_bg_gradient border border-border_color p-4 rounded-md">
+          <img src={img2} width={130}  className="hidden   absolute lg:block -top-[5rem] md:-right-[48%] xl:-right-[58%] 2xl:-right-[48%] "/>
             <div className=" lifeCycleIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-red"
+                className="text-red h-9 sm:h-12"
                 enable-background="new 0 0 512 512"
                 viewBox="0 0 512 512"
-                width="50"
-                height="50"
+               
                 fill="#d5f365"
                 id="artificial-intelligence"
               >
@@ -76,15 +73,14 @@ const LifeCycleMethod = () => {
 
             <div className="my-2 text-xl font-semibold text-center pt-6 pb-4  ">Coding</div>
           </div>
-          <div className="relative box_bg_gradient border p-4 rounded-md">
+          <div className="relative box_bg_gradient border border-border_color p-4 rounded-md">
             <div className=" lifeCycleIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-red"
+                className="text-red h-9 sm:h-12"
                 enable-background="new 0 0 512 512"
                 viewBox="0 0 512 512"
-                width="50"
-                height="50"
+               
                 fill="#d5f365"
                 id="artificial-intelligence"
               >
@@ -93,18 +89,17 @@ const LifeCycleMethod = () => {
             </div>
 
             <div className="my-2 text-xl font-semibold text-center pt-6 pb-4 ">Testing</div>
-            <img src={img} width={130}  className=" absolute lg:hidden xl:block -bottom-[5rem] -right-[48%]" />
+            <img src={img} width={130}  className="hidden md:block  absolute lg:hidden xl:block -bottom-[5rem] -right-[48%]" />
           </div>
-          <div className="relative box_bg_gradient border p-4 rounded-md">
+          <div className="relative box_bg_gradient border border-border_color p-4 rounded-md">
           
             <div className=" lifeCycleIcon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-red"
+                className="text-red h-9 sm:h-12"
                 enable-background="new 0 0 512 512"
                 viewBox="0 0 512 512"
-                width="50"
-                height="50"
+               
                 fill="#d5f365"
                 id="artificial-intelligence"
               >

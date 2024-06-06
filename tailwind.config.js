@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        textColor:'#c9c5c5'
+        textColor:'#c9c5c5',
+        border_color:'#535353'
       }
     },
   },

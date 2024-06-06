@@ -23,7 +23,7 @@ const OurServices = () => {
             <>
               <div
                 key={index}
-                className=" cursor-pointer flex flex-col w-full justify-center  border-2 border-[#535353]    py-4 sm:py-8 px-4 hover:border-[#d5f365] rounded-md transform transition-all duration-500 hover:scale-105 group  "
+                className=" cursor-pointer flex flex-col w-full justify-center  border-2 border-border_color    py-4 sm:py-8 px-4 hover:border-[#d5f365] rounded-md transform transition-all duration-500 hover:scale-105 group  "
               >
                 <div
                   dangerouslySetInnerHTML={createMarkup(item.icon)}
