@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer components {
+    
     .box-shadow{
         box-shadow: 7px 5px 30px -7px #C3D900;
         transform: scale(0.97);
     }
     .heading{
         @apply text-4xl font-semibold  text-[#d5f365]
+    }
+    .headingforyellowbg{
+        @apply text-4xl font-semibold  text-black
     }
     .subHeading{
         @apply text-xl font-semibold
@@ -27,4 +31,13 @@
     .svg-icon {
         fill: #d5f365; /* Change this to your desired color */
     }
+    .lifeCycleIcon{
+        @apply  absolute bg-black rounded-full -top-9 left-[35%]  p-2 border border-[#d5f365]
+    }
+    .box_bg_gradient{
+        @apply bg-gradient-to-br from-black to-[#252b10]
+    }
+
+
+    
 }
