@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
 
 <footer
-  class=" w-[90%] m-auto border-t border-border_color  text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
+  class=" w-[90%] m-auto border-t border-border_color   text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
 
 
   <div class="mx-6 md:flex  py-10  text-left">

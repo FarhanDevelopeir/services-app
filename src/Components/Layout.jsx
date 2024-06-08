@@ -5,6 +5,7 @@ import OurServices from './OurServices'
 import OurPortfolio from './OurPortfolio'
 import LifeCycleMethod from './LifeCycleMethod'
 import Footer from './Footer'
+import Blogs from './Blogs'
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
         <OurServices/>
         <LifeCycleMethod/>
         <OurPortfolio/>
+        <Blogs/>
         <Footer/>
     </div>
   )
