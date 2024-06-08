@@ -8,7 +8,8 @@ export default {
     extend: {
       colors:{
         textColor:'#c9c5c5',
-        border_color:'#535353'
+        border_color:'#535353',
+        bg_color:"#202020"
       }
     },
   },

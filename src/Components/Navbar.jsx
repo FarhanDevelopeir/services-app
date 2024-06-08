@@ -18,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <nav className=" bg-black text-lg dark:bg-gray-900 fixed w-full top-0 border-b border-border_color dark:border-gray-600 z-10 "  >
+    <nav className=" bg-[#202020] text-lg dark:bg-gray-900 fixed w-full top-0 border-b border-border_color dark:border-gray-600 z-10 "  >
       <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto   p-4">
         <a
         

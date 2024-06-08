@@ -9,7 +9,7 @@ const LifeCycleMethod = () => {
     return { __html: svg };
   };
   return (
-    <div className=" ">
+    <div className=" pt-40 ">
       <div className="w-[90%] m-auto">
         <div>
           <h1 className=" text-center heading">Our LifeCycle Method</h1>

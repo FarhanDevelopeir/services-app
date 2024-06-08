@@ -4,6 +4,7 @@ import HeroSection from './HeroSection'
 import OurServices from './OurServices'
 import OurPortfolio from './OurPortfolio'
 import LifeCycleMethod from './LifeCycleMethod'
+import Footer from './Footer'
 
 const Layout = () => {
   return (
@@ -11,8 +12,9 @@ const Layout = () => {
         <Navbar/>
         <HeroSection/>
         <OurServices/>
-        <OurPortfolio/>
         <LifeCycleMethod/>
+        <OurPortfolio/>
+        <Footer/>
     </div>
   )
 }

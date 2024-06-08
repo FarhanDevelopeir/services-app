@@ -13,24 +13,9 @@ const OurPortfolio = () => {
 
   const portfolioRef = useRef(null);
 
-  useEffect(() => {
-    const portfolioItems = portfolioRef.current.querySelectorAll(".portfolio-item");
 
-    gsap.to(portfolioItems, {
-      ScrollTrigger: {
-        trigger: portfolioRef.current,
-        start: "top bottom", // Animate items as they enter viewport bottom
-        end: "bottom top", // Stop animation when they exit viewport top
-        once: true, // Animate each item only once
-        interval: 0.2, // Delay between animations (adjust for desired effect)
-      },
-      x: 0, // Animate items from off-screen right to their position
-      duration: 0.5, // Adjust duration for animation speed
-      ease: "power3.out", // Customize easing (e.g., "power3.inOut" for a bounce effect)
-    });
-  }, []);
   return (
-    <div className=" bg-[#202020] py-10 my-20 ">
+    <div className="  py-10 my-20 ">
       <div className=" text-center w-[90%] m-auto ">
         <div className="  text-center">
           <div>
@@ -41,10 +26,10 @@ const OurPortfolio = () => {
         <div className=" grid sm:grid-cols-2  my-10 gap-5  "   ref={portfolioRef}>
           {Portfolio.map((item, index) => {
             return (
-              <div key={index} className="portfolio-item relative md:flex border-2 p-3 bg-[#535252] cursor-pointer transform transition-all duration-500 group hover:border-[#d5f365] border-[#535353] rounded-md  ">
+              <div key={index} className="portfolio-item relative md:flex border-2 p-3  cursor-pointer transform transition-all duration-500 group hover:border-[#d5f365] border-[#535353] rounded-md  ">
                 <img src={ecommerceImage} alt="no" className="   " />
 
-                <div className="bg-gradient-to-br from-black to-[#252b10]  p-4 rounded-lg  left-[43%] right-4 md:top-12 ">
+                <div className="bg-gradient-to-br border border-border_color from-black to-[#252b10]  p-4 rounded-lg  left-[43%] right-4 md:top-12 ">
                   <h1 className=" font-semibold text-xl">{item.title}</h1>
 
                   <p className="">{item.description}</p>
