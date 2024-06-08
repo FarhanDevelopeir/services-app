@@ -23,10 +23,10 @@ const OurPortfolio = () => {
             <p className="subHeading">Our Recent Work</p>
           </div>
         </div>
-        <div className=" grid sm:grid-cols-2  my-10 gap-5  "   ref={portfolioRef}>
+        <div className=" grid sm:grid-cols-1  my-10 gap-5  "   ref={portfolioRef}>
           {Portfolio.map((item, index) => {
             return (
-              <div key={index} className="portfolio-item relative md:flex border-2 p-3  cursor-pointer transform transition-all duration-500 group hover:border-[#d5f365] border-[#535353] rounded-md  ">
+              <div key={index} className="portfolio-item  md:flex border-2 p-3  cursor-pointer transform transition-all duration-500 group hover:border-[#d5f365] border-[#535353] rounded-md  ">
                 <img src={ecommerceImage} alt="no" className="   " />
 
                 <div className="bg-gradient-to-br border border-border_color from-black to-[#252b10]  p-4 rounded-lg  left-[43%] right-4 md:top-12 ">

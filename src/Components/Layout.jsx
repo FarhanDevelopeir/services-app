@@ -6,6 +6,7 @@ import OurPortfolio from './OurPortfolio'
 import LifeCycleMethod from './LifeCycleMethod'
 import Footer from './Footer'
 import Blogs from './Blogs'
+import HeaderandHero from './HeaderandHero'
 
 const Layout = () => {
   return (

@@ -11,7 +11,7 @@ const OurServices = () => {
   const Services = services.Services;
 
   return (
-    <div className="  w-[90%] m-auto">
+    <div className="    w-[90%] m-auto">
       <div className="text-center">
         <h1 className="heading mb-3">Our Services</h1>
 
