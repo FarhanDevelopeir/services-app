@@ -27,7 +27,7 @@ const truncateDescription = (description) => {
           // Use the index to cycle through the thumbnails
           const thumbnail = thumbnails[index % thumbnails.length];
           return (
-            <div key={index} className='slide w-[10%] mb-6 border hover:border-[#d5f365] cursor-pointer border-border_color  rounded-2xl  p-5'>
+            <div key={index} className='slide w-[7%] md:w-[10%] mb-6 border hover:border-[#d5f365] cursor-pointer border-border_color  rounded-2xl  p-5'>
               <div className=''>
                 <img src={thumbnail} className=' w-72 h-72' alt={`Thumbnail for ${item.title}`} />
               </div>
