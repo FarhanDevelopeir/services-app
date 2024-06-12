@@ -37,16 +37,19 @@
     .box_bg_gradient{
         @apply bg-gradient-to-br from-black to-[#252b10]
     }
-
-
-    
 }
-
+/* 
 .slide-track{
     -webkit-animation: scroll 40s linear infinite;
     animation: scroll 40s linear infinite;
     width: calc(250px * 14);
+    
 }
+
+.slide-track::-webkit-scrollbar{
+    width: 0;
+}
+
 @-webkit-keyframes scroll {
     0% {
         transform: translateX(0);
@@ -63,4 +66,70 @@
     100%{
         transform: translateX(calc(-250px * 7));
     }
-}
+} */
+
+/* Container to hide scrollbar while allowing overflow */
+.custom-scroll {
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .custom-scroll::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .slide-track {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    width: calc(250px * 14);
+  }
+  
+  .slide {
+    width: 7%;
+    max-width: 10%;
+    margin-bottom: 6px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .slide:hover {
+    border-color: #d5f365;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  /* Pause animation on hover */
+  .slide-track:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
