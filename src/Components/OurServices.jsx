@@ -1,5 +1,6 @@
 import React from "react";
 import services from "../data/data.json";
+import { Link } from "react-router-dom";
 
 const createMarkup = (svg) => {
   return { __html: svg };
@@ -20,7 +21,8 @@ const OurServices = () => {
       <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-5  mt-10">
         {Services.map((item, index) => {
           return (
-            <>
+            <Link to={`/services/${item.id}`}>
+
               <div
                 key={index}
                 className=" cursor-pointer flex flex-col w-full justify-center  border-2 border-border_color    py-4 sm:py-8 px-4 hover:border-[#d5f365] rounded-md transform transition-all duration-500 hover:scale-105 group  "
@@ -49,7 +51,7 @@ const OurServices = () => {
                   />
                 </svg>
               </div>
-            </>
+            </Link>
           );
         })}
       </div>

@@ -69,6 +69,7 @@
 } */
 
 /* Container to hide scrollbar while allowing overflow */
+/* Container to hide scrollbar while allowing overflow */
 .custom-scroll {
     overflow-x: auto;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -81,18 +82,19 @@
   
   .slide-track {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     margin: 20px 0;
+    width: 2000px;
     -webkit-animation: scroll 40s linear infinite;
     animation: scroll 40s linear infinite;
-    width: calc(250px * 14);
+    /* width: calc(250px * 14); Double the width to match duplicated items */
   }
   
   .slide {
-    width: 7%;
-    max-width: 10%;
+    /* width: 50%; */
+    /* max-width: 10%; */
     margin-bottom: 6px;
-    
+    /* border: 1px solid var(--border-color); */
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;
@@ -114,7 +116,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 14)); /* Adjust to match the duplicated width */
     }
   }
   
@@ -123,12 +125,13 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 14)); /* Adjust to match the duplicated width */
     }
   }
   
-  /* Pause animation on hover */
-  .slide-track:hover {
+  /* Pause animation on hover or when user interacts */
+  .slide-track:hover,
+  .slide-track:active {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
   }
