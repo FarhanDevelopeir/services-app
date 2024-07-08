@@ -9,6 +9,9 @@ import heroSectionImg from '../../img/herosectionimg.png'
 import webpic from '../../img/webpic.png'
 import aipic from '../../img/AIpic.png'
 import amazonpic from '../../img/amazonpic.png'
+import FullStack from './FullStack';
+import FullStackTech from './FullStackTech';
+import './ServicesDetails.css'
 
 
 const ServivesDetails = () => {
@@ -34,11 +37,11 @@ const ServivesDetails = () => {
     return (
       <div className=''>
         <div className='mt-24  mb-44 md:mb-16  h-[600px] md:h-auto'>
-    <div className=' relative'>
-      <img src={bgimg}   className=' -mt-24 h-96 md:h-auto ' alt="" />
-      <span class="absolute w-full inset-0 bg-black opacity-[95%]"></span>
-      <div className='' >
-        <div  className=' text-center absolute top-28 md:top-40 xl:top-40 left-[30%] md:w-[43%]' >
+    <div className='hero h-[600px]'>
+      {/* <img src={bgimg}   className=' -mt-24 h-96 md:h-[500px] w-full ' alt="" /> */}
+      {/* <span class="absolute w-full inset-0 bg-black opacity-[95%]"></span> */}
+      <div className='hero-content w-[90%] md:w-[40%] box_bg_gradient  p-5 rounded-md  ' >
+        <div  className=' text-center  ' >
           <h1 className=' text-white text-3xl   md:text-[30px] xl:text-[3rem] lg:leading-[70px] ' >{serve.title}</h1>
           <div className='flex my-5'>
             {/* <div  className=' w-1 border border-border_color bg-border_color rounded-lg mr-6' ></div> */}
@@ -53,10 +56,11 @@ const ServivesDetails = () => {
       </div>
     </div>
 
-    <div className='  ' >
-          <img src={displayImg}   className=' w-[310px] md:w-[360px] xl:w-[650px]' alt="" />
-        </div>
+   
     </div>
+    <FullStackTech/>
+    
+    <FullStack/>
         {/* <h1 className="my-4 text-xl font-semibold sm:text-2xl ">{serve.title}</h1>
         <p>{serve.description}</p> */}
       </div>

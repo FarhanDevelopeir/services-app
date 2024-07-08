@@ -1,0 +1,10 @@
+.hero{
+      background-image: url('./../../img/1.png');
+      background-size: cover;
+      background-position: center;
+      /* opacity: .6; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
