@@ -4,7 +4,7 @@ const FullStackTech = () => {
   return (
     <div className='w-[90%] m-auto mt-40'>
       <h1 className='  heading mb-16 text-center text-[#d5f365]'>Technologies in Full Stack Development</h1>
-      <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5  ">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10  ">
             <div className="frontend box_bg_gradient transition-all duration-500 border-border_color border hover:border-[#d5f365] p-2 rounded-md " >
                   <h2 className='text-xl mb-3 mt-2 text-[#d5f365]'>Frontend Development</h2>
                   <p className='text-md'>Our skilled front-end engineers utilize CSS, ReactJS, Tailwind CSS to craft captivating website interfaces. Our services encompass UI/UX development, SPA, PWA, staff augmentation, and more for a seamless user experience.</p>
@@ -24,6 +24,10 @@ const FullStackTech = () => {
             <div className="ui box_bg_gradient transition-all duration-500 border-border_color border hover:border-[#d5f365] p-2 rounded-md ">
                   <h2 className='text-xl mb-3 mt-2 text-[#d5f365]'>UI/UX Design</h2>
                   <p className='text-md' >Our full stack UI/UX designers craft captivating and intuitive designs, elevating the user journey with rich elements, harmonized color theory, and an irresistibly attractive visual language for a more appealing, interactive, and enjoyable experience.</p>
+            </div>
+            <div className="ui box_bg_gradient transition-all duration-500 border-border_color border hover:border-[#d5f365] p-2 rounded-md ">
+                  <h2 className='text-xl mb-3 mt-2 text-[#d5f365]'>Web Development</h2>
+                  <p className='text-md' >Elevate your online presence with our web development expertise. Our top developers enhance your website's performance and scalability through intuitive design, and increased on-site engagement, ensuring goal attainment and sustained user interest.</p>
             </div>
       </div>
     </div>

@@ -12,6 +12,8 @@ import amazonpic from '../../img/amazonpic.png'
 import FullStack from './FullStack';
 import FullStackTech from './FullStackTech';
 import './ServicesDetails.css'
+import AIDevelopmentTechnologies from './AIDevelopmentTechnologies';
+import AIDevelopmentWorkFlow from './AIDevelopmentWorkFlow';
 
 
 const ServivesDetails = () => {
@@ -58,9 +60,16 @@ const ServivesDetails = () => {
 
    
     </div>
-    <FullStackTech/>
+    {serve.id === 1 ? <>
+      <FullStackTech/>
     
     <FullStack/>
+    </> : serve.id ===3 ?
+    <>
+    <AIDevelopmentTechnologies/>
+    <AIDevelopmentWorkFlow/>
+    </>:''}
+   
         {/* <h1 className="my-4 text-xl font-semibold sm:text-2xl ">{serve.title}</h1>
         <p>{serve.description}</p> */}
       </div>
