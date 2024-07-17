@@ -37,6 +37,8 @@
     .box_bg_gradient{
         @apply bg-gradient-to-br from-black to-[#252b10]
     }
+    
+
 }
 /* 
 .slide-track{

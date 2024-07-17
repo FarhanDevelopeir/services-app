@@ -6,13 +6,21 @@ const createMarkup = (svg) => {
   return { __html: svg };
 };
 
+const truncateDescription = (description) => {
+  const words = description.split(' ');
+  if (words.length > 10) {
+    return words.slice(0, 20).join(' ') + '...';
+  }
+  return description;
+};
+
 const OurServices = () => {
   //    const services
   console.log(services.Services);
   const Services = services.Services;
 
   return (
-    <div className="    w-[90%] m-auto">
+    <div className="    w-[90%] m-auto" id="Services">
       <div className="text-center">
         <h1 className="heading mb-3">Our Services</h1>
 
@@ -35,7 +43,7 @@ const OurServices = () => {
                 <h1 className="my-4 text-xl font-semibold sm:text-2xl ">
                   {item.title}
                 </h1>
-                <p>{item.description}</p>
+                <p>{truncateDescription(item.description)}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

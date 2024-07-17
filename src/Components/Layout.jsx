@@ -11,6 +11,7 @@ import HeaderandHero from './HeaderandHero'
 const Layout = () => {
   return (
     <div className='text-textColor'>
+      <Navbar/>
      
         <HeroSection/>
         <OurServices/>

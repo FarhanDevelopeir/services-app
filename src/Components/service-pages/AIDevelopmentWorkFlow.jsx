@@ -1,10 +1,11 @@
 import React from "react";
-import development from "../../img/app-development.png";
+import model from "../../img/ai-model.jpg";
 import deploy from "../../img/launch.png";
 import maintenance from "../../img/maintenance.png";
 import planning from "../../img/planning.png";
 import search from "../../img/search.png";
 import testing from "../../img/test.png";
+import integration from '../../img/integration.png'
 
 const AIDevelopmentWorkFlow = () => {
   return (
@@ -24,10 +25,10 @@ const AIDevelopmentWorkFlow = () => {
               {/* <div className=" absolute h-4 w-4 mt-2 left-6 xs:left-[67px] md:left-12 xs:top-5 box_bg_gradient   rotate-45  "></div> */}
               <div className=" border-[#d5f365] border mt-16  box_bg_gradient    p-3 lg:w-[60%]  rounded-md xs:ml-3 shadow-md md:ml-14 md:-mt-3 ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Initialize
+                Requirement Analysis
                 </h2>
-                1. Discuss client requirements and project goals. <br />
-                2. Analyze current systems and identify gaps.
+                1. Understand client needs and the problem to be solved with AI. <br />
+                2. Define the scope and objectives of the AI integration project.
               </div>
             </div>
           </div>
@@ -39,74 +40,72 @@ const AIDevelopmentWorkFlow = () => {
             <div className="textbox2 relative pt-3 xs:pl-16 xs:pt-0 md:m-auto md:w-1/2 md:ml-0 md:-top-16 ">
               <div className=" border-[#d5f365] mt-16 border box_bg_gradient bg-gray-200 lg:w-[60%] md:float-end p-3 rounded-md xs:ml-3 shadow-md md:mr-16 md:mt-auto ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Planning and Design
+                Data Collection
                 </h2>
-                Create wireframes and mockups for user interface design. <br />
-                Develop a project plan with timelines and milestones.
+                Gather and preprocess relevant data for training AI models. <br />
+                Ensure data quality and consistency.
               </div>
             </div>
           </div>
           <div className="       ">
             <img
-              src={development}
+              src={model}
               className="h-16 bg-white absolute md:relative md:m-auto w-16 rounded-full border-4 border-yellow-400 p-1 shadow-md"
             />
             <div className="textbox3 relative pt-3 xs:pl-16 xs:pt-0  md:m-auto md:w-1/2 md:mr-0 md:-top-16 ">
               {/* <div className=" absolute h-4 w-4 mt-1 left-6 xs:left-[67px] md:left-9 xs:top-5 bg-gray-200 rotate-45 inset-0"></div> */}
               <div className="  border-[#d5f365] mt-16 border box_bg_gradient    bg-gray-200 p-3 lg:w-[60%]   rounded-md xs:ml-3 shadow-md md:ml-14 md:-mt-3 ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Development{" "}
+                Model Selection
                 </h2>
-                Implement frontend and backend functionalities. <br />
-                Integrate APIs and third-party services as needed.
+                Choose appropriate AI models and algorithms. <br />
+                Train models using the prepared data and evaluate performance.
               </div>
             </div>
           </div>
           <div className="">
             <img
-              src={testing}
+              src={integration}
               className="h-16 bg-white absolute md:relative md:m-auto w-16 rounded-full border-4 border-cyan-500 p-1 shadow-md"
             />
             <div className="textbox4 relative pt-3 xs:pl-16 xs:pt-0 md:m-auto md:w-1/2 md:ml-0 md:-top-16 ">
               <div className=" border-[#d5f365] mt-16 border box_bg_gradient bg-gray-200 p-3 lg:w-[60%] md:float-end rounded-md xs:ml-3 shadow-md md:mr-16 md:mt-auto ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Testing{" "}
+                Integration Development
                 </h2>
-                Conduct unit testing, integration testing, and user acceptance
-                testing. <br />
-                Address bugs and make necessary adjustments.
+                Integrate AI models into the client's existing systems or applications. <br />
+                Develop APIs or user interfaces for interacting with the AI models.
               </div>
             </div>
           </div>
           <div className=" ">
             <img
-              src={deploy}
+              src={testing}
               className="h-16 bg-white absolute md:relative md:m-auto w-16 rounded-full border-4 border-cyan-500 p-1 shadow-md"
             />
             <div className="textbox5 relative pt-3 xs:pl-16 xs:pt-0  md:m-auto md:w-1/2 md:mr-0 md:-top-16 ">
               {/* <div className=" absolute h-4 w-4 mt-1 left-6 xs:left-[67px] md:left-9 xs:top-5 bg-gray-200 rotate-45 inset-0"></div> */}
               <div className="  border-[#d5f365] mt-16 border box_bg_gradient    bg-gray-200 p-3 lg:w-[60%]   rounded-md xs:ml-3 shadow-md md:ml-14 md:-mt-3 ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Deployment{" "}
+                Testing 
                 </h2>
-                Deploy the application to a staging environment for final
-                approval. <br />
-                Launch the application to the production environment.
+                Test the AI integration in real-world scenarios. <br />
+Validate model performance and accuracy.
               </div>
             </div>
           </div>
           <div className="       ">
             <img
-              src={maintenance}
+              src={deploy}
               className="h-16    bg-white absolute md:relative md:m-auto w-16 rounded-full border-4 border-black p-1 shadow-md"
             />
             <div className="textbox6 relative pt-3 xs:pl-16 xs:pt-0 md:m-auto md:w-1/2 md:ml-0 md:-top-16 ">
               <div className="border-[#d5f365] mt-16 border box_bg_gradient  box_bg_gradient p-3 lg:w-[60%] md:float-end  rounded-md xs:ml-3 shadow-md md:mr-16 md:mt-auto ">
                 <h2 className=" text-2xl font-semibold text-[#d5f365] mb-3">
-                  Maintenance
+                Deployment
                 </h2>
-                Provide ongoing support and maintenance services. <br />
-                Implement updates and improvements based on user feedback.
+                Deploy the AI models to the production environment. <br />
+Monitor model performance and update as needed to maintain accuracy and relevance.
               </div>
             </div>
           </div>

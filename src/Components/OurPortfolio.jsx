@@ -15,7 +15,7 @@ const OurPortfolio = () => {
 
 
   return (
-    <div className="  py-10 my-20 ">
+    <div className="  py-10 my-20 " id="Portfolio">
       <div className=" text-center w-[90%] m-auto ">
         <div className="  text-center">
           <div>

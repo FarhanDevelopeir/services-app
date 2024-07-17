@@ -63,7 +63,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto" id='Blogs'>
       <div>
         <h1 className="text-center text-2xl font-bold mb-6">Our Blogs</h1>
       </div>

@@ -9,7 +9,10 @@ export default {
       colors:{
         textColor:'#c9c5c5',
         border_color:'#535353',
-        bg_color:"#202020"
+        bg_color:"#202020",
+        yellowTextColor:'#d5f365',
+        yellowBorderColor:'#d5f365',
+        yellowBgColor:'#d5f365',
       }
     },
   },
