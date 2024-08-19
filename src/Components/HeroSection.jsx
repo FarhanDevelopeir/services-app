@@ -1,27 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import bgimg from '../img/1.png'
 import heroSectionImg from '../img/herosectionimg.png'
+import Typed from 'typed.js'
 
 const HeroSection = () => {
-    const texts = [
-      "Software Development Solutions",
-      "AI Development Solutions",
-      "Full Stack Development Solutions"
-    ];
-    const [currentText, setCurrentText] = useState(texts[0]);
-    const [index, setIndex] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setIndex(prevIndex => (prevIndex + 1) % texts.length);
-      }, 3800); // 2s typing + 2s pause for alternate
-  
-      return () => clearInterval(interval);
-    }, [texts.length]);
-  
-    useEffect(() => {
-      setCurrentText(texts[index]);
-    }, [index, texts]);
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: ['Software Solutions', 'AI Solutions', 'Full Stack Solutions'],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+    };
+
+    const typed = new Typed(typedElement.current, options);
+
+    return () => {
+      typed.destroy(); // Cleanup Typed.js instance
+    };
+  }, []);
 
 
   return (
@@ -33,7 +32,7 @@ const HeroSection = () => {
         {/* <div  className='  absolute top-28 md:top-40 xl:top-52 left-[6%] md:w-[43%]' > */}
         <div  className=' w-[90%] sm:w-[70%] mt-10 md:mt-28 md:w-[40%] m-auto ' >
 
-          <h1 className=' text-white text-2xl   md:text-[30px] xl:text-[3rem] lg:leading-[70px] ' >We Provide Digital <h1 className='typing'>{currentText}</h1></h1>
+          <h1 className=' text-white text-2xl   md:text-[30px] xl:text-[3rem] lg:leading-[70px] ' >We Provide Digital <br></br> <span ref={typedElement} className='text-yellowTextColor'></span><span className="typed-cursor typed-cursor--blink"></span></h1>
           <div className='flex my-5'>
             <div  className=' w-1 border border-border_color bg-border_color rounded-lg mr-6' ></div>
             <p className=' text-sm  lg:text-lg '>"We provide digital software solutions, including Web development, AI integration, Amazon marketing, and SEO. Our team delivers high-quality, custom software to boost your business's efficiency and success."</p>

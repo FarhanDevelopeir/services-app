@@ -11,6 +11,7 @@
     .heading{
         @apply text-4xl font-semibold  text-[#d5f365]
     }
+    
     .headingforyellowbg{
         @apply text-4xl font-semibold  text-black
     }
@@ -37,7 +38,11 @@
     .box_bg_gradient{
         @apply bg-gradient-to-br from-black to-[#252b10]
     }
-    .typing {
+    .typed-cursor {
+      color: #C3D900;
+    }
+    
+    /* .typing {
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid white;
@@ -61,7 +66,7 @@
         border-color: white;
       }
     }
-    
+     */
     
 
 }
