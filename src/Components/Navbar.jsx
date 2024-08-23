@@ -38,7 +38,7 @@ function Navbar() {
             className="navbar--content"
           >
             <button className="button hover:button_hover active:button_active">
-              <span className="">Contact Me</span>
+              <span className="">Contact US</span>
             </button>
           </Link>
           <button
