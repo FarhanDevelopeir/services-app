@@ -17,7 +17,7 @@ const Layout = () => {
         <OurServices/>
         <LifeCycleMethod/>
         <OurPortfolio/>
-        <Blogs/>
+        {/* <Blogs/> */}
     
     </div>
   )

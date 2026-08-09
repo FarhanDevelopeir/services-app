@@ -62,7 +62,7 @@ const ServivesDetails = () => {
                   </p>
                 </div>
                 <button className=" mt-5 button hover:button_hover px-7 py-3 active:button_active">
-                  <span className="">Contact Me</span>
+                  <span className="">Contact Us</span>
                 </button>
               </div>
             </div>

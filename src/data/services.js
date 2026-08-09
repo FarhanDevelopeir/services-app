@@ -44,51 +44,51 @@ const services = [
     ],
     technologies: ["Next.js", "Stripe", "Prisma"],
   },
-  {
-    id: 4,
-    title: "WordPress",
-    description:
-      "Custom WordPress websites and themes tailored for speed, SEO, and easy content management.",
-    icon: "globe",
-    accent: "blue",
-    features: [
-      "Custom theme development",
-      "WooCommerce store setup",
-      "Plugin customization",
-      "Performance & SEO optimization",
-    ],
-    technologies: ["Elementor", "WooCommerce", "PHP"],
-  },
-  {
-    id: 5,
-    title: "Shopify",
-    description:
-      "High-converting Shopify stores with custom themes, apps, and seamless checkout experiences.",
-    icon: "shopify",
-    accent: "green",
-    features: [
-      "Custom Shopify theme design",
-      "Store setup & migration",
-      "App integrations",
-      "Conversion rate optimization",
-    ],
-    technologies: ["Liquid", "Shopify Plus", "Klaviyo"],
-  },
-  {
-    id: 6,
-    title: "Digital Marketing",
-    description:
-      "Data-driven marketing strategies to grow your brand, generate leads, and increase online visibility.",
-    icon: "megaphone",
-    accent: "rose",
-    features: [
-      "SEO & content strategy",
-      "Google & Meta ad campaigns",
-      "Social media management",
-      "Analytics & performance tracking",
-    ],
-    technologies: ["Google Ads", "Meta Ads", "SEMrush"],
-  },
+  // {
+  //   id: 4,
+  //   title: "WordPress",
+  //   description:
+  //     "Custom WordPress websites and themes tailored for speed, SEO, and easy content management.",
+  //   icon: "globe",
+  //   accent: "blue",
+  //   features: [
+  //     "Custom theme development",
+  //     "WooCommerce store setup",
+  //     "Plugin customization",
+  //     "Performance & SEO optimization",
+  //   ],
+  //   technologies: ["Elementor", "WooCommerce", "PHP"],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Shopify",
+  //   description:
+  //     "High-converting Shopify stores with custom themes, apps, and seamless checkout experiences.",
+  //   icon: "shopify",
+  //   accent: "green",
+  //   features: [
+  //     "Custom Shopify theme design",
+  //     "Store setup & migration",
+  //     "App integrations",
+  //     "Conversion rate optimization",
+  //   ],
+  //   technologies: ["Liquid", "Shopify Plus", "Klaviyo"],
+  // },
+  // {
+  //   id: 6,
+  //   title: "Digital Marketing",
+  //   description:
+  //     "Data-driven marketing strategies to grow your brand, generate leads, and increase online visibility.",
+  //   icon: "megaphone",
+  //   accent: "rose",
+  //   features: [
+  //     "SEO & content strategy",
+  //     "Google & Meta ad campaigns",
+  //     "Social media management",
+  //     "Analytics & performance tracking",
+  //   ],
+  //   technologies: ["Google Ads", "Meta Ads", "SEMrush"],
+  // },
 ];
 
 export default services;

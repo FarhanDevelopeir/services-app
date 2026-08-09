@@ -148,7 +148,7 @@ function Navbar() {
                     </a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     onClick={() => closeMenu("Skills")}
                     activeClass="navbar--active-content"
@@ -170,7 +170,7 @@ function Navbar() {
                       Blogs
                     </a>
                   </Link>
-                </li>
+                </li> */}
               </>
           </ul>
           </>
