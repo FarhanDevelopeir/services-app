@@ -21,7 +21,7 @@ function Navbar() {
   const shouldShowMenuItems = location.pathname === "/";
 
   return (
-    <nav className="fixed bg-black text-lg dark:bg-gray-900 w-full top-0 border-b border-border_color dark:border-gray-600 z-10">
+    <nav className="fixed bg-black-900 text-lg dark:bg-gray-900 w-full top-0 border-b border-border_color dark:border-gray-600 z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse h-12">
           <h1>Services</h1>

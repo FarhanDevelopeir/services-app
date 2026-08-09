@@ -11,10 +11,16 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^0.544.0",
+    "motion": "^12.23.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-masonry": "^2.7.1",
     "react-router-dom": "^6.24.0",
     "react-scroll": "^1.9.0",
+    "tailwind-merge": "^3.3.1",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

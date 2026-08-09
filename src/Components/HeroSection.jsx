@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import bgimg from '../img/1.png'
-import heroSectionImg from '../img/herosectionimg.png'
+import heroSectionImg from '../img/hero-image.png'
 import Typed from 'typed.js'
 
 const HeroSection = () => {
@@ -28,7 +28,7 @@ const HeroSection = () => {
     <div className=' '>
       {/* <img src={bgimg}   className=' -mt-24 h-96 md:h-auto ' alt="" /> */}
       {/* <span class="absolute w-full inset-0 bg-black opacity-[95%]"></span> */}
-      <div  className='hero flex flex-col md:flex-row ' >
+      <div  className=' flex flex-col md:flex-row ' >
         {/* <div  className='  absolute top-28 md:top-40 xl:top-52 left-[6%] md:w-[43%]' > */}
         <div  className=' w-[90%] sm:w-[70%] mt-10 md:mt-28 md:w-[40%] m-auto ' >
 
@@ -43,9 +43,8 @@ const HeroSection = () => {
             </button>
         </div>
         {/* <div className=' absolute top-[440px] left-4 lg:right-40 xl:right-20 md:top-32 md:right-[6%] md:left-auto ' > */}
-        <div className=' lg:mr-20 mt-10 ' >
-
-          <img src={heroSectionImg}   className=' w-[310px] md:w-[360px] xl:w-[650px]' alt="" />
+        <div className=' m-auto lg:mr-20 mt-10 ' >
+          <img src={heroSectionImg}   className=' w-[310px] md:w-[470px] xl:w-[550px]' alt="" />
         </div>
       </div>
     </div>
@@ -54,3 +53,22 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

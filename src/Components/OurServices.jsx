@@ -1,65 +1,113 @@
-import React from "react";
-import services from "../data/data.json";
-import { Link } from "react-router-dom";
+import {
+  Brain,
+  Code2,
+  Layers,
+  Globe,
+  ShoppingBag,
+  Megaphone,
+  Check,
+} from "lucide-react";
+import services from "../data/services";
 
-const createMarkup = (svg) => {
-  return { __html: svg };
+const iconMap = {
+  brain: Brain,
+  code: Code2,
+  layers: Layers,
+  globe: Globe,
+  shopify: ShoppingBag,
+  megaphone: Megaphone,
 };
 
-const truncateDescription = (description) => {
-  const words = description.split(' ');
-  if (words.length > 10) {
-    return words.slice(0, 20).join(' ') + '...';
-  }
-  return description;
+const accentStyles = {
+  purple: {
+    iconBg: "bg-purple-500/10",
+    iconColor: "text-purple-400",
+    check: "text-purple-400",
+    pill: "border-purple-500/40 text-purple-300 bg-purple-500/5",
+  },
+  teal: {
+    iconBg: "bg-teal-500/10",
+    iconColor: "text-teal-400",
+    check: "text-teal-400",
+    pill: "border-teal-500/40 text-teal-300 bg-teal-500/5",
+  },
+  blue: {
+    iconBg: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+    check: "text-blue-400",
+    pill: "border-blue-500/40 text-blue-300 bg-blue-500/5",
+  },
+  green: {
+    iconBg: "bg-green-500/10",
+    iconColor: "text-green-400",
+    check: "text-green-400",
+    pill: "border-green-500/40 text-green-300 bg-green-500/5",
+  },
+  rose: {
+    iconBg: "bg-rose-500/10",
+    iconColor: "text-rose-400",
+    check: "text-rose-400",
+    pill: "border-rose-500/40 text-rose-300 bg-rose-500/5",
+  },
 };
 
 const OurServices = () => {
-  //    const services
-  console.log(services.Services);
-  const Services = services.Services;
-
   return (
-    <div className="    w-[90%] m-auto" id="Services">
+    <div className="w-[90%] m-auto py-10" id="Services">
       <div className="text-center">
         <h1 className="heading mb-3">Our Services</h1>
-
         <p className="subHeading">Services For Our Worldwide Customers</p>
       </div>
-      <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-5  mt-10">
-        {Services.map((item, index) => {
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        {services.map((item) => {
+          const Icon = iconMap[item.icon];
+          const accent = accentStyles[item.accent];
+
           return (
-            <Link to={`/services/${item.id}`}>
-
+            <div
+              key={item.id}
+              className="flex flex-col h-full rounded-xl border border-border_color/60 bg-[#141414] p-6 transition-all duration-300 hover:border-border_color"
+            >
               <div
-                key={index}
-                className=" cursor-pointer flex flex-col w-full justify-center  border-2 border-border_color    py-4 sm:py-8 px-4 hover:border-[#d5f365] rounded-md transform transition-all duration-500 hover:scale-105 group  "
+                className={`inline-flex w-12 h-12 items-center justify-center rounded-lg ${accent.iconBg} mb-5`}
               >
-                <div
-                  dangerouslySetInnerHTML={createMarkup(item.icon)}
-                  className=" "
-                />
-
-                <h1 className="my-4 text-xl font-semibold sm:text-2xl ">
-                  {item.title}
-                </h1>
-                <p>{truncateDescription(item.description)}</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-8 h-8 mt-7 group-hover:text-[#d5f365]  transition-all duration-500 ease-in-out group-hover:w-14  "
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
+                <Icon className={`w-6 h-6 ${accent.iconColor}`} />
               </div>
-            </Link>
+
+              <h2 className="text-xl font-semibold text-white mb-3">
+                {item.title}
+              </h2>
+
+              <p className="text-sm text-textColor/80 leading-relaxed mb-5">
+                {item.description}
+              </p>
+
+              <ul className="space-y-2.5 mb-6 flex-grow">
+                {item.features.map((feature) => (
+                  <li
+                    key={feature}
+                    className="flex items-start gap-2.5 text-sm text-textColor/90"
+                  >
+                    <Check
+                      className={`w-4 h-4 mt-0.5 shrink-0 ${accent.check}`}
+                    />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-border_color/40">
+                {item.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className={`text-xs px-3 py-1 rounded-full border ${accent.pill}`}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           );
         })}
       </div>
