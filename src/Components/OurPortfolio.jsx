@@ -55,12 +55,12 @@ const ProjectPanel = ({ project }) => (
   >
     <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-border_color/50 bg-[#141414] lg:flex-row">
       {/* Image */}
-      <div className="relative w-full lg:w-[42%] xl:w-[38%]">
-        <div className="aspect-[16/10] overflow-hidden lg:aspect-auto lg:h-full">
+      <div className="relative w-full lg:w-[42%] xl:w-[38%]  flex items-center ">
+        <div className="  aspect-[16/10] overflow-hidden lg:aspect-auto lg:h-full flex items-center justify-center">
           <img
             src={project.image}
             alt={project.title}
-            className="h-full w-full object-cover"
+            className=" w-full  bg-center bg-no-repeat"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#141414]/80" />

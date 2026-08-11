@@ -1,5 +1,8 @@
+import ecommerceImage from "../img/fortesting.png";
 import placeholderImage from "../img/fortesting.png";
+import chatting_app from "../img/chatting_app.png";
 
+// import ecommerceImage from "../img/port5.png";
 const projects = [
   {
     id: 1,
@@ -8,7 +11,7 @@ const projects = [
     category: "Web Application",
     description:
       "A real-time messaging platform with instant delivery, online presence, group chats, and a responsive interface built for seamless communication.",
-    image: placeholderImage,
+    image: chatting_app,
     tags: ["React", "WebSockets", "Node.js"],
   },
   {
@@ -18,7 +21,7 @@ const projects = [
     category: "E-Commerce",
     description:
       "A full-featured online store with product catalog, cart, secure checkout, order tracking, and an admin dashboard for inventory management.",
-    image: placeholderImage,
+    image: ecommerceImage,
     tags: ["Next.js", "Stripe", "MongoDB"],
   },
   {
